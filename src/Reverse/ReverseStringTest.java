@@ -13,5 +13,6 @@ public class ReverseStringTest {
 		ReverseString rS = new ReverseString(toBeReversed);
 		rS.reverse();
 		rS.getResult();
+		input.close();
 	}
 }

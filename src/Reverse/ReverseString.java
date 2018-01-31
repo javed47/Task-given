@@ -41,6 +41,10 @@ public class ReverseString {
 				break;
 
 			else {
+				if (character[z] == '.')
+				{
+					z--;
+				}
 				char c = character[i];
 				character[i] = character[z];
 				character[z] = c;
@@ -51,9 +55,9 @@ public class ReverseString {
 		this.result = new String(character);
 	}
 
-	// Eventually this is the tostring method which directly System out
-	public void getResult() {
-		System.out.printf("%s%s%n", "The reversed String is: ", result);
+	// Eventually this is the reversed string giving method
+	public String getResult() {
+		return result;
 	}
 
 }
